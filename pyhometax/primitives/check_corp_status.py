@@ -3,7 +3,7 @@ import xmltodict
 import time
 
 
-def check_business_number_status(business_number: str):
+def check_corp_status(business_number: str):
     _validate_format(business_number)
     response_xml = _request_to_hometax(business_number)
     response_message = _get_response_message(response_xml)
